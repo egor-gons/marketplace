@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles_setting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Карточка товара</title>
+</head>
+<body>
+    <div class="header_showcase">
+        <a href="javascript:window.history.back();">
+            <img src="svg/Arrow.svg" alt="back">
+        </a>
+        
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="/photo_product/00001.png" alt="Slide 1"></div>
+            <div class="slide"><img src="/app/svg/Arrow.svg" alt="Slide 2"></div>
+            <div class="slide"><img src="/photo_product/00001.png" alt="Slide 3"></div>
+            <!-- Добавьте дополнительные слайды по мере необходимости -->
+        </div>
+    </div>
+    
+    <div class="slider-navigation">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <!-- Добавьте дополнительные кружочки по количеству слайдов -->
+    </div>
+
+
+
+    <div class="wite_pool"></div>
+
+    <div class="manu_header">
+
+        <div class="manu_block"onclick="window.location.href='home.html'">
+            <img src="svg/Home.svg" alt="Home">
+            <p>Главная</p>
+
+        </div>
+
+        <div class="manu_block_activ"onclick="window.location.href='catalog.html'">
+            <img src="svg/Catalog 2.svg" alt="Cftalog">
+            <p>Каталог</p>
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Cart.svg" alt="Cart">
+            <p>Корзина</p>
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Heart.svg" alt="Like">
+            <p>Избранное</p>
+        </div>
+
+        <div class="manu_block"onclick="window.location.href='personal_area.html'">
+            <img src="svg/User.svg" alt="User">
+            <p>Кабинет</p>
+        </div>
+
+    </div>
+
+    <script src="like_scripr.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

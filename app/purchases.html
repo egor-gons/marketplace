@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles_setting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>purchases</title>
+</head>
+<body>
+    <div class="f_1" >
+        <div class="header_name_back">
+            <a href="personal_area.html">
+                <img src="svg/Arrow.svg" alt="cross">
+            </a>
+            <a>Мои покупки</a>
+
+        </div>
+
+        <div class="purchases_block">
+            <div class="name_edit">
+                <a class="p1">Заказ от 18 марта</a>
+                <div><img id  = "svg" src="svg/Menu Dots.svg" alt=""></div>
+            </div>
+
+            <div id="overlay"></div>
+            <div id="popup">
+                
+                <div class="button">
+                                <button id="close">Повторить заказ</button>
+                </div>
+
+            </div>
+
+            <a class="p2">Доставка получена</a>
+            <br>
+
+            <a class="p3">1 товар</a>
+
+            <div class="photo_name">
+                <img src="/photo_product/00001.png" alt="">
+                <a class="name_pr">Лист гипсоволокнистый KNAUF <br> Суперпол, 600*1200*20мм</a>
+            </div>
+            <div class="price">
+                <a>610 ₽</a>
+            </div>
+        </div>
+        <div class="not_purchases">
+            <img src="img/Default_goods_delivery_stylish_illustration_3 1.png" alt="#">
+            <div class="text">
+                <a class="a1">Нет актуальных доставок</a>
+                <br>
+                <a class="a2">Закажите товары из каталога!</a>
+            </div>
+
+            <div class="button">
+                <button onclick="window.location.href='personal_area.html'">Перейти в каталог</button>
+            </div>
+
+        </div>
+
+        <div class="manu_header">
+
+
+        <div class="manu_block">
+            <img src="svg/Home.svg" alt="Home">
+            <p>Главная</p>
+
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Catalog.svg" alt="Cftalog">
+            <p>Каталог</p>
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Cart.svg" alt="Cart">
+            <p>Корзина</p>
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Heart.svg" alt="Like">
+            <p>Избранное</p>
+        </div>
+
+        <div class="manu_block_activ">
+            <img src="svg/User 2.svg" alt="User">
+            <p>Кабинет</p>
+        </div>
+
+    </div>
+
+    <script>
+        const svg = document.getElementById('svg');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const closeBtn = document.getElementById('close');
+    
+        svg.addEventListener('click', function() {
+            overlay.style.display = 'block';
+            popup.style.display = 'block';
+        });
+    
+        closeBtn.addEventListener('click', function() {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

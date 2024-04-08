@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_area.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>personal_area</title>
+</head>
+
+<body>
+
+    <div class="data_user">
+
+        <div class="name_part">
+            <a>Мой профиль</a>
+        </div>
+
+        <div class="profile_photo">
+            <div class="photo">
+                 <img id="svg" src="svg/Gallery Edit.svg" alt="Фото профиля">
+            </div>
+           
+        </div>
+
+        <div id="overlay"></div>
+        <div id="popup">
+            <div class="photo_edit">
+                <div class="create_photo">
+                <a>Снять фото</a>
+            </div>
+
+            <div class="hr">
+                <hr>
+            </div>
+
+            <div class="create_photo">
+                <a>Выбрать фото</a>
+            </div>
+            
+            <div class="button">
+                            <button id="close">Отменить</button>
+            </div>
+
+            </div>
+            
+        </div>
+
+        <div class="name_user">
+            <a>Иванов Иван</a>
+        </div>
+
+        <div class="line">
+            <hr>
+        </div>
+
+        <div class="user_info">
+            
+            <div class="graf">
+
+                <div class="graf_name">
+                    <p>Email</p>
+                </div>
+
+                <div class="graf_data">
+                    <p>janedoe@mail.com</p>
+                </div>
+
+            </div>
+
+            <div class="graf">
+
+                <div class="graf_name">
+                    <p>Талефон</p>
+                </div>
+
+                <div class="graf_data">
+                    <p>+7 (900) 000-00-00</p>
+                </div>
+
+            </div>
+
+            <div class="graf">
+
+                <div class="graf_name">
+                    <p>ИНН</p>
+                </div>
+
+                <div class="graf_data">
+                    <p>0000000000</p>
+                </div>
+
+            </div>
+
+            <div class="graf">
+
+                <div class="graf_name">
+                    <p>Пароль</p>
+                </div>
+
+                <div class="graf_data">
+                    <p>******</p>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="button">
+            <button onclick="window.location.href='personal_area_setting.html'">Редактировать</button>
+        </div>
+
+    </div>
+
+    <div class="data_pay">
+
+        <div class="name_user">
+            <a>Способы оплаты</a>
+        </div>
+
+        <div class="cart">
+            <div class="graf_name">
+                <p>Мир *9033</p>
+            </div>
+            <div class="graf_data">
+                <img src="svg/Trash.svg" alt="del">
+            </div>
+        </div>
+
+        <div class="button">
+            <button onclick="window.location.href='cart_edit.html'">Добавить карту</button>
+        </div>
+        
+
+    </div>
+
+    <div class="data_info">
+        
+        <div class="name_user">
+            <a>Покупки</a>
+        </div>
+            
+        <div class="data_point" onclick="location.href='delivery.html'">
+                <div class="graf_name">
+                    <a>Доставки</a>
+                </div>
+
+                <div class="graf_data">
+                    <span>&gt</span>
+                </div>
+           
+        </div>
+        <div class="data_point" onclick="location.href='purchases.html'">
+            <div class="graf_name">
+                <a>Покупки</a>
+            </div>
+
+            <div class="graf_data">
+                <span>&gt</span>
+            </div>
+        </div>
+
+        <div class="data_point" onclick="location.href='reviews.html'">
+            <div class="graf_name">
+                <a>Отзывы</a>
+            </div>
+
+            <div class="graf_data">
+                <span>&gt</span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="manu_header">
+
+        <div class="manu_block">
+            <img src="svg/Home.svg" alt="Home">
+            <p>Главная</p>
+
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Catalog.svg" alt="Cftalog">
+            <p>Каталог</p>
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Cart.svg" alt="Cart">
+            <p>Корзина</p>
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Heart.svg" alt="Like">
+            <p>Избранное</p>
+        </div>
+
+        <div class="manu_block_activ">
+            <img src="svg/User 2.svg" alt="User">
+            <p>Кабинет</p>
+        </div>
+
+    </div>
+
+
+<script src="photo_edit_create.js"></script>
+
+</body>
+</html>

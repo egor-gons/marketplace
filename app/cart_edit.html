@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles_setting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>cart_edit</title>
+</head>
+<body>
+
+    <div class="cross">
+        <a>Добавить карту</a>
+        <a href="personal_area.html">
+            <img src="svg/Close Circle.svg" alt="cross">
+        </a>
+    </div>
+    <div class="cart_pagers">
+        <div class="cart">
+            <div class='visa_mc_mir'>
+                <img src="img/carts.png" alt="#">
+            </div>
+            
+            <div class="num_cart">
+                <a>Номер карты</a>
+                <input type="num_cart" name="num_cart">
+            </div>
+
+            <div class="data_cvv">
+                <div class="day_action">
+                    <a>Действует до</a>
+                    <div class="input_day">
+                        <input type="month_action" name="month" placeholder="мм">
+                        <a>/</a>
+                        <input type="year" name="year" placeholder="гг">
+                    </div>
+
+                </div>
+
+                <div class="cvv">
+                    <a>CVV/CVC</a>
+                <input type="CVV" name="CVV" p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button onclick="window.location.href='personal_area.html'">Сохранить изменения</button>
+        </div>
+    </div>
+    <div class="manu_header">
+
+        <div class="manu_block">
+            <img src="svg/Home.svg" alt="Home">
+            <p>Главная</p>
+
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Catalog.svg" alt="Cftalog">
+            <p>Каталог</p>
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Cart.svg" alt="Cart">
+            <p>Корзина</p>
+        </div>
+
+        <div class="manu_block">
+            <img src="svg/Heart.svg" alt="Like">
+            <p>Избранное</p>
+        </div>
+
+        <div class="manu_block_activ">
+            <img src="svg/User 2.svg" alt="User">
+            <p>Кабинет</p>
+        </div>
+
+    </div>
+</body>
+</html>
