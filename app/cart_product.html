@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <title>Карточка товара</title>
+
+    <!-- информация из карточки товара-->
 </head>
-<body>
-    <div class="header_showcase">
+<body style="background: #E0E0E0;">
+    <div class="header_cart_product">
         <a href="javascript:window.history.back();">
             <img src="svg/Arrow.svg" alt="back">
         </a>
@@ -23,45 +25,308 @@
             <div class="slide"><img src="/photo_product/00001.png" alt="Slide 1"></div>
             <div class="slide"><img src="/app/svg/Arrow.svg" alt="Slide 2"></div>
             <div class="slide"><img src="/photo_product/00001.png" alt="Slide 3"></div>
-            <!-- Добавьте дополнительные слайды по мере необходимости пожалуйста -->
+            <!-- Добавьте дополнительные слайды по мере необходимости -->
         </div>
     </div>
     
-    <div class="slider-navigation">
-        <span class="circle"></span>
-        <span class="circle"></span>
-        <span class="circle"></span>
-        <!-- Добавьте дополнительные кружочки по количеству слайдов -->
+
+
+    <div class="data_name_block">
+        <div class="slider-navigation">
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <!--  дополнительные кружочки по количеству слайдов -->
+        </div>
+
+        <div class="name_product">Лист гипсоволокнистый KNAUF <br>
+            Суперпол, 600*1200*20мм
+        </div>
+
+        <hr>
+
+        <div class="top_cart_howcase">
+            <div class="top_star">
+                <div class="top_cart_product">5.0</div>
+                <div class="star_cart_product">
+                    <img src="svg/Star.svg" alt="star">
+                    <img src="svg/Star.svg" alt="star">
+                    <img src="svg/Star.svg" alt="star">
+                    <img src="svg/Star.svg" alt="star">
+                    <img src="svg/Star.svg" alt="star">
+                </div>
+            </div>
+            <div class="brend_cart_product">
+                Бренд: Кнауф
+
+            </div>
+        </div>
+
+        <div class="price_person">
+            <div class="price_pr">
+                <div class="prise">610 ₽</div>
+                <div class="pr"><u>шт</u></div>
+                <div class="counter">
+                        <img src="svg/min.svg" alt="" class="min" onclick="decrement()">
+    
+                    <span id="counterValue">1</span>
+                        <img src="svg/max.svg" alt="" class="max" onclick="increment()">
+
+                </div>
+            </div>
+
+        </div>
+
+
+    
+
+
+        <div class="like_cart_product">
+            <div class="like_cart_product">
+                <button id="like_19" class="selector" aria-label="Отправить реакцию «нравится»" aria-pressed="false" data-id="1" style="width: 50px; height: 50px;">
+                    <svg class="like_no_1" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="svg/like_no_1.svg">
+                <path class="like_no_1" d="M15.8398 2.39496C13.013 -0.169205 10.2871 2.03882 9.27755 
+                    3.46336C8.26797 2.03882 5.54163 -0.169205 2.71481 2.39496C-0.112011 
+                    4.95912 1.87349 8.80536 3.2196 10.408C4.22918 11.6544 6.85456 14.361  
+                    9.27755 15.2158C11.7005 14.361 14.3254 11.6544 15.335 10.408C16.6811 
+                    8.80536 18.6666 4.95912 15.8398 2.39496Z" stroke="black" 
+                    stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                </button>
+               </div>
+
+            <div class="button_cart_product">
+                <button class="color-button red-button" onclick="changeColorAndText(this)">В корзину</button>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <div class="delivery_var">
+        <div class="delivery_base">
+            <div class="n1">
+                <img src="svg/Box.svg" alt="">
+                <div>Доставка</div>
+            </div>
+            
+            <div class="info_delivery_base">18.03 - 20.03, бесплатно</div>
+
+        </div>
+        <div class="delivery_fast">
+            <div class="n2">Экспресс-доставка</div>
+            
+            <div class="info_delivery_fast">завтра, бесплатно от 5000₽, предоплата 100%</div>
+
+        </div>
+
+    </div>
+
+    <div class="data_info">
+        <a>Описание</a>
+        <div class="info">КНАУФ-суперпол — элемент пола (ЭП), представляет
+            собой изделие заводской готовности к поэлементной
+            сборке в конструкциях стяжек сборных оснований пола
+            КНАУФ. Элементы пола изготавливаются путем
+            склеивания двух влагостойких гипсоволокнистых
+            листов (ГВЛВ по ГОСТ Р 51829-2001) с размерами
+            1200х600х20 мм с взаимным смещением в двух
+            перпендикулярных направлениях и образованием
+            фальцев шириной 50 мм по периметру изделий.
+            Общая толщина ЭП — 20 мм. Применяется для
+            устройства сборного основания пола, в зданиях
+            различного назначения.</div>        
+        <a>Характеристики</a>
+        <div class="characteristics">
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Артикул</div>
+                    <div class="h_info">000-019-228</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Страна</div>
+                    <div class="h_info">Россия</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Бренд</div>
+                    <div class="h_info">Кнауф</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Категория</div>
+                    <div class="h_info">Суперпол</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Толщина, мм</div>
+                    <div class="h_info">20</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Влагостойкость</div>
+                    <div class="h_info">Да</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Применимость с теплыми полами</div>
+                    <div class="h_info">Да</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Звукоизоляция</div>
+                    <div class="h_info">Да</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Группа горючести</div>
+                    <div class="h_info">Г1</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Вес, кг</div>
+                    <div class="h_info">18.28</div>
+                </div>
+                <hr>
+
+
+            </div>
+
+        </div>
+        <a>Размер упаковки</a>
+        <div class="characteristics">
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Ширина, мм</div>
+                    <div class="h_info">600</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Высота, мм</div>
+                    <div class="h_info">20</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Длина, мм</div>
+                    <div class="h_info">1200</div>
+                </div>
+                <hr>
+
+
+            </div>
+
+
+            
+
+
+        </div>
+    </div>
+
+    <div class="reviews">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <a style="font-size: 20px; font-weight: 600;">Отзывы</a>
+                <a class="num_reviews" style="font-size: 15px; font-weight: 600; color: #757575;">6</a>
+            </div>
+
+            <img src="svg/Info.svg" alt="" onclick="window.location.href='reviews_histori.html'">
+
+        </div>
+
+        <div class="reviews_block">
+            <div class="">
+                <img src="svg/Star.svg" alt="">
+                <img src="svg/Star.svg" alt="">
+                <img src="svg/Star.svg" alt="">
+                <img src="svg/Star.svg" alt="">
+                <img src="svg/Star.svg" alt="">
+            </div>
+
+            <div class="hr"><hr></div>
+            <div>5.0 / 5</div>
+        </div>
+        <div class="button_create_reviews">
+            <button class="create_reviews" onclick="window.location.href='create_reviews.html'">Оставить отзыв</button>
+        </div>
+
+
+
     </div>
 
 
 
-    <div class="wite_pool"></div>
+    <div class="wite_pool" style="background: #fff;"></div>
 
     <div class="manu_header">
 
-        <div class="manu_block"onclick="window.location.href='home.html'">
+        <div class="manu_block" onclick="window.location.href='home.html'">
             <img src="svg/Home.svg" alt="Home">
             <p>Главная</p>
 
         </div>
 
-        <div class="manu_block_activ"onclick="window.location.href='catalog.html'">
-            <img src="svg/Catalog 2.svg" alt="Cftalog">
+        <div class="manu_block" onclick="window.location.href='catalog.html'">
+            <img src="svg/Catalog.svg" alt="Cftalog">
             <p>Каталог</p>
         </div>
 
-        <div class="manu_block">
+        <div class="manu_block" onclick="window.location.href='cart.html'">
             <img src="svg/Cart.svg" alt="Cart">
             <p>Корзина</p>
         </div>
 
-        <div class="manu_block">
+        <div class="manu_block" onclick="window.location.href='favorites.html'">
             <img src="svg/Heart.svg" alt="Like">
             <p>Избранное</p>
         </div>
 
-        <div class="manu_block"onclick="window.location.href='personal_area.html'">
+        <div class="manu_block" onclick="window.location.href='personal_area.html'">
             <img src="svg/User.svg" alt="User">
             <p>Кабинет</p>
         </div>
@@ -70,5 +335,7 @@
 
     <script src="like_scripr.js"></script>
     <script src="slider.js"></script>
+    <script src="cart.js"></script>
+    <script src="counter.js"></script>
 </body>
 </html>

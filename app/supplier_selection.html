@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles_setting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Купить</title>
+</head>
+<body style="background: #E0E0E0;">
+    <div class="header_name_buy1">
+
+        <div style="display: flex;align-items: center;flex-direction: column;">
+            <a>Оформление заказа</a>
+        </div>
+
+
+
+        <div style="margin-left: 20px; margin-top: 20px; margin-bottom: 10px; font-weight: 600;">Выбор поставщика</div>
+
+        <div class="supplier" style="display: flex; margin-bottom: 5px;">
+            <div class="">
+                <div style="display: flex;">
+                <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1">
+                <div class="supplier_name">Поставщик 1</div>
+
+            </div>                
+                <div class="supplier_name_data">Дата доставки: 18 марта</div>
+
+            </div>
+            
+            <div style="margin-left: 20px;">
+               
+        
+                <div class="photo_name">
+                    <img src="/photo_product/00001.png" alt="" style="width: 35px; height: 35px; ">
+                <div style="display: flex;flex-direction: column;">
+                    <a class="name_pr" style="font-size: 8px; margin-top: 0px;">Лист гипсоволокнистый KNAUF <br> Суперпол, 600*1200*20мм</a>
+                    <a class="name_pr" style="font-size: 11px; margin-top: 0px; font-weight: 800; margin-top: 3px;">610 ₽</a>
+                </div>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="supplier" style="display: flex; margin-bottom: 5px;">
+            <div class="">
+                <div style="display: flex;">
+                <input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2">
+                <div class="supplier_name">Поставщик 2</div>
+
+            </div>                
+                <div class="supplier_name_data">Дата доставки: 18 марта</div>
+
+            </div>
+            
+            <div style="margin-left: 20px;">
+               
+        
+                <div class="photo_name">
+                    <img src="/photo_product/00001.png" alt="" style="width: 35px; height: 35px; ">
+                <div style="display: flex;flex-direction: column;">
+                    <a class="name_pr" style="font-size: 8px; margin-top: 0px;">Лист гипсоволокнистый KNAUF <br> Суперпол, 600*1200*20мм</a>
+                    <a class="name_pr" style="font-size: 11px; margin-top: 0px; font-weight: 800; margin-top: 3px;">650 ₽</a>
+                </div>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="supplier" style="display: flex; margin-bottom: 5px;">
+            <div class="">
+                <div style="display: flex;">
+                <input type="checkbox" id="checkbox3" name="checkbox" value="checkbox3">
+                <div class="supplier_name">Поставщик 2</div>
+
+            </div>                
+                <div class="supplier_name_data">Дата доставки: 18 марта</div>
+
+            </div>
+            
+            <div style="margin-left: 20px;">
+               
+        
+                <div class="photo_name">
+                    <img src="/photo_product/00001.png" alt="" style="width: 35px; height: 35px; ">
+                <div style="display: flex;flex-direction: column;">
+                    <a class="name_pr" style="font-size: 8px; margin-top: 0px;">Лист гипсоволокнистый KNAUF <br> Суперпол, 600*1200*20мм</a>
+                    <a class="name_pr" style="font-size: 11px; margin-top: 0px; font-weight: 800; margin-top: 3px;">670 ₽</a>
+                </div>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+
+    </div>
+
+    <div class="dilivery_block">
+        <div class="name_edit" style="display: flex; flex-direction: row;justify-content: flex-start;">
+            <img src="svg/Calendar.svg" alt="" style="margin-right: 5px;">
+            <a class="p1">Ожидаемая дата доставки</a>
+        </div>
+
+        <a class="p2">18 марта</a>
+        <br>
+
+        <a class="p3">1 товар</a>
+
+        <div class="photo_name">
+            <img src="/photo_product/00001.png" alt="">
+            <a class="name_pr">Лист гипсоволокнистый KNAUF <br> Суперпол, 600*1200*20мм</a>
+        </div>
+        <div class="price">
+            <a>610 ₽</a>
+        </div>
+        
+        <div>
+            <div class="b black-border" id="block1">18.08</div>
+            <div class="b" id="block2">18.08</div>
+            <div class="b" id="block3">18.08</div>
+            <div class="b" id="block4">18.08</div>
+            <div class="b" id="block5">18.08</div>
+
+        </div>
+
+    </div>
+
+    <div class="buy_var">
+        <div style="display: flex;">
+            <img src="svg/Banknote 2.svg" alt="" style="margin-left: 20px; margin-right: 5px;">
+            <a style="font-size: 14px; font-weight: 400;">Способ оплаты</a>
+        </div>
+
+        <div class="buy_var_parts">
+            <div class="block" onclick="selectBlock(1)" style="display: flex;flex-direction: row;justify-content: space-evenly;align-items: center;">
+                <a style="font-size: 13px; font-weight: 600;">Карта</a>
+                <a style="font-size: 13px; font-weight: 600;">7345</a>
+            </div>
+
+            <div class="block selected" onclick="selectBlock(2)">
+                <img src="svg/sbp.png" alt="" style="width: 110px; margin-top: 5px;">
+            </div>
+
+            <div class="block" onclick="selectBlock(3)">
+                <img src="svg/create_cart.png" alt="" style="width: 110px; margin-top: 5px;">
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="result" style="background: white; border-radius: 20px; padding: 10px 0px; margin-top: 1px;">
+        <div style="display: flex;justify-content: space-between; margin: 10px 20px; align-items: center;">
+            <div style="font-size: 20px; font-weight: 600;">Ваш заказ</div>
+            <div style="color: #757575; font-size: 11px;">1 товар</div>
+        </div>
+
+        <div  style="display: flex;justify-content: space-between; margin: 5px 20px;">
+            <div  style="font-size: 14px; font-weight: 600;">Товары (1)</div>
+            <div style="font-size: 16px; font-weight: 800;">610 ₽</div>
+        </div>
+
+        <div  style="display: flex;justify-content: space-between; margin: 5px 20px;">
+            <div style="font-size: 14px; font-weight: 600;">Доставка</div>
+            <div style="font-size: 16px; font-weight: 800;">0 ₽</div>
+        </div>
+        <hr>
+        <div  style="display: flex;justify-content: space-between; margin: 5px 20px;">
+            <div style="font-size: 14px; font-weight: 600;">Итого</div>
+            <div style="font-size: 16px; font-weight: 800;">610 ₽</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 100px;">
+            <button class="by_next" onclick="">Оплатить</button>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="manu_header">
+
+        <div class="manu_block" onclick="window.location.href='home.html'">
+            <img src="svg/Home.svg" alt="Home">
+            <p>Главная</p>
+
+        </div>
+
+        <div class="manu_block" onclick="window.location.href='catalog.html'">
+            <img src="svg/Catalog.svg" alt="Cftalog">
+            <p>Каталог</p>
+        </div>
+
+        <div class="manu_block" onclick="window.location.href='cart.html'">
+            <img src="svg/Cart.svg" alt="Cart">
+            <p>Корзина</p>
+        </div>
+
+        <div class="manu_block_activ" onclick="window.location.href='favorites.html'">
+            <img src="svg/Heart.svg" alt="Like">
+            <p>Избранное</p>
+        </div>
+
+        <div class="manu_block" onclick="window.location.href='personal_area.html'">
+            <img src="svg/User.svg" alt="User">
+            <p>Кабинет</p>
+        </div>
+
+    </div>
+    <script src="counter.js"></script>
+    <script src="like_scripr.js"></script>
+    <script src="buy_1.js"></script>
+
+
+</body>
+</html>
