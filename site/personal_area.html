@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_area_pc.css">
+    <link rel="stylesheet" href="styles_setting_pc.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>personal_area</title>
+</head>
+
+<body>
+    <div class="header_pc">
+
+        <img src="img/logo_pc_header.svg" alt=""  style="width: 176px;" style="cursor: pointer;" onclick="window.location.href='home.html'">
+        <img src="img/cvtalog_button.svg" alt="" style="width: 146px;" style="cursor: pointer;" onclick="window.location.href='catalog.html'">
+
+        <div class="header_pc_vision">
+            <input class="sgerch_pc" type="text" name="" id="" placeholder="Поиск товара">
+            <img src="img/serch_header.svg" alt="" style="cursor: pointer;">
+        </div>
+
+        <div class="blocs_header_pc" onclick="window.location.href='personal_area.html'">
+            <div class="bloc_header_pc">
+                <img src="svg/User.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='personal_area.html'">Кабинет</a>
+            </div>
+            <div class="bloc_header_pc" onclick="window.location.href='favorites.html'">
+                <img src="svg/Heart.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='favorites.html'">Избранное</a>
+            </div>
+            <div class="bloc_header_pc" onclick="window.location.href='cart.html'">
+                <img src="svg/Cart.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='cart.html'">Корзина</a>
+            </div>
+        </div>
+
+    </div>
+    <div style="display: flex;">
+            <div class="meny_personal_area">
+        <div class="a1" onclick="window.location.href='personal_area.html'">Личный кабинет</div>
+        <div class="a2_activ" onclick="window.location.href='personal_area.html'">Мои данные</div>
+        <div class="a2" onclick="window.location.href='cart_edit.html'">Способы оплаты</div>
+        <div class="a2" onclick="window.location.href='purchases.html'">Покупки</div>
+        <div class="a2"onclick="window.location.href='delivery.html'">Доставки</div>
+        <div class="exit_pc" onclick="">
+            <img src="svg/Logout 2.svg" alt="">
+            <a>Выйти</a>
+        </div>
+
+
+
+        
+
+    </div>
+
+    <div>
+        <div class="input_profile_setting">
+            <div style="width: 100%; height: 100px; padding-top: 50px; ">
+                <a style="font-size: 20px; font-weight: 600; margin-left: 40px;">Мои данные</a>
+                <br>
+                <div style="font-size: 18px; font-weight: 600; margin-left: 40px; padding-top: 40px;">Личная информация</div>
+            </div>
+
+
+            <div class="type_input">
+                <div class="pool">
+                <div class="name_input">
+                    <a>Имя</a>
+                </div>
+                <input type="name" name="name" placeholder="Иванов Иван" class="tlk-input" required>
+            </div>
+            <div class="pool">
+                <div class="name_input">
+                    <a>Email</a>
+                </div>
+                <input type="login" name="login" placeholder="janedoe@mail.com" class="tlk-input" required>
+            </div>
+    
+            <div class="pool">
+                <div class="name_input">
+                    <a>Телефон</a>
+                </div>
+                <input type="phone" name="phone" placeholder="+7 (900) 000-00-00" class="tlk-input" required>
+            </div>
+            <div class="pool">
+                <div class="name_input">
+                    <a>ИНН</a>
+                </div>
+                <input type="INN" name="INN" placeholder="0000000000" class="tlk-input" required>
+            </div>
+            </div>
+
+            
+    
+        </div>
+        <div class="setting_password">
+    
+            <div class="name_password_review">
+                <a>Изменить пароль</a>
+            
+        
+            </div>
+        
+            <div class="password_review">
+                <div class="block_password_review">
+                    <div class="name_block_password_review">
+                        <a>Старый пароль</a>
+                    </div>
+        
+                    <div class="input_block_password_review">
+                        <input type="input_block_password_review_i" name="input_block_password_review_i" placeholder="">
+                    </div>
+                </div>
+        
+                <div class="block_password_review">
+                    <div class="name_block_password_review">
+                        <a>Новый пароль</a>
+                    </div>
+        
+                    <div class="input_block_password_review">
+                        <input type="input_block_password_review_i" name="input_block_password_review_i" placeholder="">
+                    </div>
+                </div>
+        
+                <div class="block_password_review">
+                    <div class="name_block_password_review">
+                        <a>Повторите пароль</a>
+                    </div>
+        
+                    <div class="input_block_password_review">
+                        <input type="input_block_password_review_i" name="input_block_password_review_i" placeholder="">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="button">
+                <a href="personal_area.html">
+                    <button>Cохранить изменения</button>
+                </a>
+        
+            </div>
+        
+        </div>
+        
+        </div>
+    
+    
+    </div>
+    </div>
+
+
+    
+
+    
+   
+    
+
+<script src="photo_edit_create.js"></script>
+
+</body>
+</html>

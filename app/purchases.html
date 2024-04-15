@@ -58,7 +58,7 @@
             </div>
 
             <div class="button">
-                <button onclick="window.location.href='personal_area.html'">Перейти в каталог</button>
+                <button onclick="window.location.href='catalog.html'">Перейти в каталог</button>
             </div>
 
         </div>
@@ -94,21 +94,6 @@
         </div>
     </div>
 
-    <script>
-        const svg = document.getElementById('svg');
-        const popup = document.getElementById('popup');
-        const overlay = document.getElementById('overlay');
-        const closeBtn = document.getElementById('close');
-    
-        svg.addEventListener('click', function() {
-            overlay.style.display = 'block';
-            popup.style.display = 'block';
-        });
-    
-        closeBtn.addEventListener('click', function() {
-            overlay.style.display = 'none';
-            popup.style.display = 'none';
-        });
-    </script>
+    <script src="photo_edit_create.js"></script>
 </body>
 </html>

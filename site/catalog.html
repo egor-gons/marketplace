@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_area_pc.css">
+    <link rel="stylesheet" href="styles_setting_pc.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>personal_area</title>
+</head>
+
+<body>
+    <div class="header_pc">
+
+        <img src="img/logo_pc_header.svg" alt=""  style="width: 176px;" style="cursor: pointer;" onclick="window.location.href='home.html'">
+        <img src="img/cvtalog_button.svg" alt="" style="width: 146px;" style="cursor: pointer;" onclick="window.location.href='catalog.html'">
+
+        <div class="header_pc_vision">
+            <input class="sgerch_pc" type="text" name="" id="" placeholder="Поиск товара">
+            <img src="img/serch_header.svg" alt="" style="cursor: pointer;">
+        </div>
+
+        <div class="blocs_header_pc" onclick="window.location.href='personal_area.html'">
+            <div class="bloc_header_pc">
+                <img src="svg/User.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='personal_area.html'">Кабинет</a>
+            </div>
+            <div class="bloc_header_pc" onclick="window.location.href='favorites.html'">
+                <img src="svg/Heart.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='favorites.html'">Избранное</a>
+            </div>
+            <div class="bloc_header_pc" onclick="window.location.href='cart.html'">
+                <img src="svg/Cart.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='cart.html'">Корзина</a>
+            </div>
+        </div>
+
+    </div>
+    <div style="display: flex;">
+                
+
+            <div class="meny_personal_area">
+                <div class="categories">
+                    <div class="a1">Каталог</div>
+                    <div class="categories_block" onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Акции и скидки</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_block" onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Строительные материалы</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Кровля и фасад</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Отделочные материалы</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Напольные покрытия</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Керамическая плитка</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Лакокрасочные материалы</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Сантехника</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Коммуникации, отопление</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Освещение и электрика</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Электроинструмент</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div><div class="categories_block"  onclick="toggleBlocks()">
+                        <hr>
+                        <div class="data_categories">
+                            <div class="name_categories">Крепеж и скобянка</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="">
+                <div class="categories_parths hidden" id="categories_parths">
+
+
+                    <div class="categories_parths_block" onclick="toggleBlocks()">
+                        <div class="data_categories_parths">
+                            <span>&lt;</span>
+                            <div class="name_categories_parths" style="margin-right: 90px; font-weight: 600;">Строительные материалы</div>
+                            
+                        </div>
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Гипсокартон (ГКЛ)</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Древесно-плитный материал</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Металлопрокат</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Ограждения</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Пена, клей, герметик</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Пиломатериал</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Плитка тротуарная</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Сухие строительные смеси</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Сыпучий материал, добавки</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                    <div class="categories_parths_block" onclick="window.location.href='showcase.html'">
+                        <hr>
+                        <div class="data_categories_parths">
+                            <div class="name_categories_parths">Элементы строительства</div>
+                            <span>&gt;</span>
+                        </div>
+            
+                    </div>
+            
+                </div>
+                <div class="showcase hidden" id="showcase">
+                    <div class="showcase_block">
+                        <div class="photo_showcase"onclick="window.location.href='cart_product.html'">
+                            <img class="photo_product_showcase_home" src="/photo_product/00001.png" alt="#">
+                        
+                        </div>
+            
+                        <br>
+                        <div class="an_showcase" onclick="window.location.href='cart_product.html'">Лист гипсоволокнистый  KNAUF <br> Суперпол, 600*1200*20мм </div>
+                        
+                        <div class="top_cart_howcase "onclick="window.location.href='cart_product.html'">
+                            <div class="price_person_showcase" onclick="window.location.href='cart_product.html'">
+                                <div class="prise_block">
+                                    <div class="price_showcase_home">610 ₽</div>
+                                    <div class="person_text_showcase_home">шт.</div>
+                                </div>
+        
+                            <div class="availability_status">В наличии</div>
+                       </div>
+                            
+                            <div class="brend">
+            <div class="top_star">
+                                <div class="top">5.0</div>
+                                <div class="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                                    <div class="button_by">
+                            <button class="color-button red-button" onclick="changeColorAndText(this)">В корзину</button>
+                        </div>
+            
+                        <div class="prise_showcase_have_like">
+                            <div class="prise_showcase_have">
+
+                           <div class="like">
+                            <button id="like_1" class="selector" aria-label="Отправить реакцию «нравится»" aria-pressed="false" data-id="1">
+                                <svg class="like_no_1" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="svg/like_no_1.svg">
+                            <path class="like_no_1" d="M15.8398 2.39496C13.013 -0.169205 10.2871 2.03882 9.27755 
+                                3.46336C8.26797 2.03882 5.54163 -0.169205 2.71481 2.39496C-0.112011 
+                                4.95912 1.87349 8.80536 3.2196 10.408C4.22918 11.6544 6.85456 14.361  
+                                9.27755 15.2158C11.7005 14.361 14.3254 11.6544 15.335 10.408C16.6811 
+                                8.80536 18.6666 4.95912 15.8398 2.39496Z" stroke="black" 
+                                stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                           </div>
+                        </div>
+                    
+                        </div>
+            
+
+            
+            
+                    
+                    </div>
+                    <div class="showcase_block">
+                        <div class="photo_showcase"onclick="window.location.href='cart_product.html'">
+                            <img class="photo_product_showcase_home" src="/photo_product/00001.png" alt="#">
+                        
+                        </div>
+            
+                        <br>
+                        <div class="an_showcase" onclick="window.location.href='cart_product.html'">Лист гипсоволокнистый  KNAUF <br> Суперпол, 600*1200*20мм </div>
+                        
+                        <div class="top_cart_howcase "onclick="window.location.href='cart_product.html'">
+                            <div class="price_person_showcase" onclick="window.location.href='cart_product.html'">
+                                <div class="prise_block">
+                                    <div class="price_showcase_home">610 ₽</div>
+                                    <div class="person_text_showcase_home">шт.</div>
+                                </div>
+        
+                            <div class="availability_status">В наличии</div>
+                       </div>
+                            
+                            <div class="brend">
+            <div class="top_star">
+                                <div class="top">5.0</div>
+                                <div class="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                                    <div class="button_by">
+                            <button class="color-button red-button" onclick="changeColorAndText(this)">В корзину</button>
+                        </div>
+            
+                        <div class="prise_showcase_have_like">
+                            <div class="prise_showcase_have">
+
+                           <div class="like">
+                            <button id="like_1" class="selector" aria-label="Отправить реакцию «нравится»" aria-pressed="false" data-id="1">
+                                <svg class="like_no_1" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="svg/like_no_1.svg">
+                            <path class="like_no_1" d="M15.8398 2.39496C13.013 -0.169205 10.2871 2.03882 9.27755 
+                                3.46336C8.26797 2.03882 5.54163 -0.169205 2.71481 2.39496C-0.112011 
+                                4.95912 1.87349 8.80536 3.2196 10.408C4.22918 11.6544 6.85456 14.361  
+                                9.27755 15.2158C11.7005 14.361 14.3254 11.6544 15.335 10.408C16.6811 
+                                8.80536 18.6666 4.95912 15.8398 2.39496Z" stroke="black" 
+                                stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                           </div>
+                        </div>
+                    
+                        </div>
+            
+
+            
+            
+                    
+                    </div>                    <div class="showcase_block">
+                        <div class="photo_showcase"onclick="window.location.href='cart_product.html'">
+                            <img class="photo_product_showcase_home" src="/photo_product/00001.png" alt="#">
+                        
+                        </div>
+            
+                        <br>
+                        <div class="an_showcase" onclick="window.location.href='cart_product.html'">Лист гипсоволокнистый  KNAUF <br> Суперпол, 600*1200*20мм </div>
+                        
+                        <div class="top_cart_howcase "onclick="window.location.href='cart_product.html'">
+                            <div class="price_person_showcase" onclick="window.location.href='cart_product.html'">
+                                <div class="prise_block">
+                                    <div class="price_showcase_home">610 ₽</div>
+                                    <div class="person_text_showcase_home">шт.</div>
+                                </div>
+        
+                            <div class="availability_status">В наличии</div>
+                       </div>
+                            
+                            <div class="brend">
+            <div class="top_star">
+                                <div class="top">5.0</div>
+                                <div class="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                                    <div class="button_by">
+                            <button class="color-button red-button" onclick="changeColorAndText(this)">В корзину</button>
+                        </div>
+            
+                        <div class="prise_showcase_have_like">
+                            <div class="prise_showcase_have">
+
+                           <div class="like">
+                            <button id="like_1" class="selector" aria-label="Отправить реакцию «нравится»" aria-pressed="false" data-id="1">
+                                <svg class="like_no_1" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="svg/like_no_1.svg">
+                            <path class="like_no_1" d="M15.8398 2.39496C13.013 -0.169205 10.2871 2.03882 9.27755 
+                                3.46336C8.26797 2.03882 5.54163 -0.169205 2.71481 2.39496C-0.112011 
+                                4.95912 1.87349 8.80536 3.2196 10.408C4.22918 11.6544 6.85456 14.361  
+                                9.27755 15.2158C11.7005 14.361 14.3254 11.6544 15.335 10.408C16.6811 
+                                8.80536 18.6666 4.95912 15.8398 2.39496Z" stroke="black" 
+                                stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                           </div>
+                        </div>
+                    
+                        </div>
+            
+
+            
+            
+                    
+                    </div>                    <div class="showcase_block">
+                        <div class="photo_showcase"onclick="window.location.href='cart_product.html'">
+                            <img class="photo_product_showcase_home" src="/photo_product/00001.png" alt="#">
+                        
+                        </div>
+            
+                        <br>
+                        <div class="an_showcase" onclick="window.location.href='cart_product.html'">Лист гипсоволокнистый  KNAUF <br> Суперпол, 600*1200*20мм </div>
+                        
+                        <div class="top_cart_howcase "onclick="window.location.href='cart_product.html'">
+                            <div class="price_person_showcase" onclick="window.location.href='cart_product.html'">
+                                <div class="prise_block">
+                                    <div class="price_showcase_home">610 ₽</div>
+                                    <div class="person_text_showcase_home">шт.</div>
+                                </div>
+        
+                            <div class="availability_status">В наличии</div>
+                       </div>
+                            
+                            <div class="brend">
+            <div class="top_star">
+                                <div class="top">5.0</div>
+                                <div class="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                                    <div class="button_by">
+                            <button class="color-button red-button" onclick="changeColorAndText(this)">В корзину</button>
+                        </div>
+            
+                        <div class="prise_showcase_have_like">
+                            <div class="prise_showcase_have">
+
+                           <div class="like">
+                            <button id="like_1" class="selector" aria-label="Отправить реакцию «нравится»" aria-pressed="false" data-id="1">
+                                <svg class="like_no_1" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="svg/like_no_1.svg">
+                            <path class="like_no_1" d="M15.8398 2.39496C13.013 -0.169205 10.2871 2.03882 9.27755 
+                                3.46336C8.26797 2.03882 5.54163 -0.169205 2.71481 2.39496C-0.112011 
+                                4.95912 1.87349 8.80536 3.2196 10.408C4.22918 11.6544 6.85456 14.361  
+                                9.27755 15.2158C11.7005 14.361 14.3254 11.6544 15.335 10.408C16.6811 
+                                8.80536 18.6666 4.95912 15.8398 2.39496Z" stroke="black" 
+                                stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                           </div>
+                        </div>
+                    
+                        </div>
+            
+
+            
+            
+                    
+                    </div>                    <div class="showcase_block">
+                        <div class="photo_showcase"onclick="window.location.href='cart_product.html'">
+                            <img class="photo_product_showcase_home" src="/photo_product/00001.png" alt="#">
+                        
+                        </div>
+            
+                        <br>
+                        <div class="an_showcase" onclick="window.location.href='cart_product.html'">Лист гипсоволокнистый  KNAUF <br> Суперпол, 600*1200*20мм </div>
+                        
+                        <div class="top_cart_howcase "onclick="window.location.href='cart_product.html'">
+                            <div class="price_person_showcase" onclick="window.location.href='cart_product.html'">
+                                <div class="prise_block">
+                                    <div class="price_showcase_home">610 ₽</div>
+                                    <div class="person_text_showcase_home">шт.</div>
+                                </div>
+        
+                            <div class="availability_status">В наличии</div>
+                       </div>
+                            
+                            <div class="brend">
+            <div class="top_star">
+                                <div class="top">5.0</div>
+                                <div class="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                                    <div class="button_by">
+                            <button class="color-button red-button" onclick="changeColorAndText(this)">В корзину</button>
+                        </div>
+            
+                        <div class="prise_showcase_have_like">
+                            <div class="prise_showcase_have">
+
+                           <div class="like">
+                            <button id="like_1" class="selector" aria-label="Отправить реакцию «нравится»" aria-pressed="false" data-id="1">
+                                <svg class="like_no_1" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="svg/like_no_1.svg">
+                            <path class="like_no_1" d="M15.8398 2.39496C13.013 -0.169205 10.2871 2.03882 9.27755 
+                                3.46336C8.26797 2.03882 5.54163 -0.169205 2.71481 2.39496C-0.112011 
+                                4.95912 1.87349 8.80536 3.2196 10.408C4.22918 11.6544 6.85456 14.361  
+                                9.27755 15.2158C11.7005 14.361 14.3254 11.6544 15.335 10.408C16.6811 
+                                8.80536 18.6666 4.95912 15.8398 2.39496Z" stroke="black" 
+                                stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                           </div>
+                        </div>
+                    
+                        </div>
+            
+
+            
+            
+                    
+                    </div>                    <div class="showcase_block">
+                        <div class="photo_showcase"onclick="window.location.href='cart_product.html'">
+                            <img class="photo_product_showcase_home" src="/photo_product/00001.png" alt="#">
+                        
+                        </div>
+            
+                        <br>
+                        <div class="an_showcase" onclick="window.location.href='cart_product.html'">Лист гипсоволокнистый  KNAUF <br> Суперпол, 600*1200*20мм </div>
+                        
+                        <div class="top_cart_howcase "onclick="window.location.href='cart_product.html'">
+                            <div class="price_person_showcase" onclick="window.location.href='cart_product.html'">
+                                <div class="prise_block">
+                                    <div class="price_showcase_home">610 ₽</div>
+                                    <div class="person_text_showcase_home">шт.</div>
+                                </div>
+        
+                            <div class="availability_status">В наличии</div>
+                       </div>
+                            
+                            <div class="brend">
+            <div class="top_star">
+                                <div class="top">5.0</div>
+                                <div class="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                    <img src="svg/Star.svg" alt="star">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                                    <div class="button_by">
+                            <button class="color-button red-button" onclick="changeColorAndText(this)">В корзину</button>
+                        </div>
+            
+                        <div class="prise_showcase_have_like">
+                            <div class="prise_showcase_have">
+
+                           <div class="like">
+                            <button id="like_1" class="selector" aria-label="Отправить реакцию «нравится»" aria-pressed="false" data-id="1">
+                                <svg class="like_no_1" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="svg/like_no_1.svg">
+                            <path class="like_no_1" d="M15.8398 2.39496C13.013 -0.169205 10.2871 2.03882 9.27755 
+                                3.46336C8.26797 2.03882 5.54163 -0.169205 2.71481 2.39496C-0.112011 
+                                4.95912 1.87349 8.80536 3.2196 10.408C4.22918 11.6544 6.85456 14.361  
+                                9.27755 15.2158C11.7005 14.361 14.3254 11.6544 15.335 10.408C16.6811 
+                                8.80536 18.6666 4.95912 15.8398 2.39496Z" stroke="black" 
+                                stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                            </button>
+                           </div>
+                        </div>
+                    
+                        </div>
+            
+
+            
+            
+                    
+                    </div>
+            
+                    
+            
+            
+                  
+                    
+                </div>
+            </div>
+
+
+
+        
+
+    </div>
+
+
+    
+
+    
+   
+    
+
+<script src="photo_edit_create.js"></script>
+<script src="like_scripr.js"></script>
+<script src="cart_like.js"></script>
+<script>
+    function toggleBlocks() {
+        var categoriesParths = document.getElementById("categories_parths");
+        var showcase = document.getElementById("showcase");
+
+        categoriesParths.classList.toggle("hidden");
+        showcase.classList.toggle("hidden");
+    }
+</script>
+
+</body>
+
+</html>

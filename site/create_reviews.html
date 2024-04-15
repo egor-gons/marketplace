@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles_setting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Отзывы</title>
+
+</head>
+<body style="background: #fff;">
+    <div class="header_new_reviews">
+        <a href="javascript:window.history.back();">
+            <img src="svg/Close Circle.svg" alt="back">
+        </a>
+        
+    </div>
+
+    <div class="name_new_reviews">Новый отзыв</div>
+
+    <div class="photo_reviews">
+        <img src="/photo_product/00001.png" alt="">
+    </div>
+
+    <div class="name_product_new_reviews">
+        Лист гипсоволокнистый KNAUF <br>
+        Суперпол, 600*1200*20мм
+    </div>
+
+    <div class="stars_new" >
+        <div class="star_new_reviews" onclick="toggleStar(1)">★</div>
+        <div class="star_new_reviews" onclick="toggleStar(2)">★</div>
+        <div class="star_new_reviews" onclick="toggleStar(3)">★</div>
+        <div class="star_new_reviews" onclick="toggleStar(4)">★</div>
+        <div class="star_new_reviews" onclick="toggleStar(5)">★</div>
+    </div>
+
+
+        
+    <div style="font-size: 20px; width: 100%; text-align: center; font-weight: 600;">Оцените товар!</div>
+
+    <div class="" style="width: 100%; display: flex; justify-content: space-evenly;">
+        <input class="input_reviews" type="text" placeholder="напишите комментарий">
+    </div>
+
+
+
+
+
+
+    <div class="button_create_reviews">
+        <button class="create_reviews" onclick="window.location.href='reviews_done.html'">Оставить отзыв</button>
+    </div>
+
+
+
+
+
+    <div class="wite_pool" style="background: #fff;"></div>
+
+    <div class="manu_header">
+
+        <div class="manu_block" onclick="window.location.href='home.html'">
+            <img src="svg/Home.svg" alt="Home">
+            <p>Главная</p>
+
+        </div>
+
+        <div class="manu_block" onclick="window.location.href='catalog.html'">
+            <img src="svg/Catalog.svg" alt="Cftalog">
+            <p>Каталог</p>
+        </div>
+
+        <div class="manu_block" onclick="window.location.href='cart.html'">
+            <img src="svg/Cart.svg" alt="Cart">
+            <p>Корзина</p>
+        </div>
+
+        <div class="manu_block" onclick="window.location.href='favorites.html'">
+            <img src="svg/Heart.svg" alt="Like">
+            <p>Избранное</p>
+        </div>
+
+        <div class="manu_block" onclick="window.location.href='personal_area.html'">
+            <img src="svg/User.svg" alt="User">
+            <p>Кабинет</p>
+        </div>
+
+    </div>
+
+    <script src="like_scripr.js"></script>
+    <script src="slider.js"></script>
+    <script src="cart.js"></script>
+    <script src="counter.js"></script>
+    <script src="star.js"></script>
+</body>
+</html>

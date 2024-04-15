@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_entrance_pc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+    <title>Авторизация</title>
+</head>
+<body>
+    <div class="field_avt">
+        
+        <div class="name">
+            <h2>Авторизация</h2>
+        </div>
+        <div class="namen">
+            <div>
+                <div class="pool">
+                    <div class="name_input">
+                        <a>Email</a>
+                    </div>
+
+                
+                    <input type="login" name="login-input" placeholder="janedoe@mail.com" class="tlk-input" required>
+                </div>
+            <div>
+                <div class="pool">
+                    <div class="name_input">
+                        <a>Пароль</a>
+                    </div>
+
+                
+                <div class="password">
+                    <input type="password" id="password-input" placeholder="введите свой пароль" name="password">
+                    <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    
+                </div>
+
+            </div>
+                <div class="button">
+                    <button>Войти</button>
+                </div>
+        </div>
+
+        
+
+
+        <div class="choice">
+            <a href="signup.html" class="tlk-form__link" data-route data-field="tlk-link">Зарегистрироваться</a>
+            <a href="recover-password.html" class="tlk-form__link" data-route data-field="tlk-link">Восстановить пароль</a>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="hide_password.js"></script>
+</body>
+</html>

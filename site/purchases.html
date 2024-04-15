@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_area_pc.css">
+    <link rel="stylesheet" href="styles_setting_pc.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>personal_area</title>
+</head>
+
+<body>
+    <div class="header_pc">
+
+        <img src="img/logo_pc_header.svg" alt=""  style="width: 176px;" style="cursor: pointer;" onclick="window.location.href='home.html'">
+        <img src="img/cvtalog_button.svg" alt="" style="width: 146px;" style="cursor: pointer;" onclick="window.location.href='catalog.html'">
+
+        <div class="header_pc_vision">
+            <input class="sgerch_pc" type="text" name="" id="" placeholder="Поиск товара">
+            <img src="img/serch_header.svg" alt="" style="cursor: pointer;">
+        </div>
+
+        <div class="blocs_header_pc" onclick="window.location.href='personal_area.html'">
+            <div class="bloc_header_pc">
+                <img src="svg/User.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='personal_area.html'">Кабинет</a>
+            </div>
+            <div class="bloc_header_pc" onclick="window.location.href='favorites.html'">
+                <img src="svg/Heart.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='favorites.html'">Избранное</a>
+            </div>
+            <div class="bloc_header_pc" onclick="window.location.href='cart.html'">
+                <img src="svg/Cart.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='cart.html'">Корзина</a>
+            </div>
+        </div>
+
+    </div>
+    <div style="display: flex;">
+            <div class="meny_personal_area">
+        <div class="a1" onclick="window.location.href='personal_area.html'">Личный кабинет</div>
+        <div class="a2" onclick="window.location.href='personal_area.html'">Мои данные</div>
+        <div class="a2" onclick="window.location.href='cart_edit.html'">Способы оплаты</div>
+        <div class="a2_activ" onclick="window.location.href='purchases.html'">Покупки</div>
+        <div class="a2"onclick="window.location.href='delivery.html'">Доставки</div>
+        <div class="exit_pc" onclick="">
+            <img src="svg/Logout 2.svg" alt="">
+            <a>Выйти</a>
+        </div>
+
+
+
+        
+
+    </div>
+
+    <div>
+        <div class="header_name_back">
+            <a href="personal_area.html">
+            </a>
+            <a>Мои покупки</a>
+
+        </div>
+        <div style="display: block;">
+            <div class="purchases_block">
+                <div class="name_edit">
+                    <a class="p1">Заказ от 18 марта</a>
+                    <div><img id  = "svg" src="svg/Menu Dots.svg" alt=""></div>
+                </div>
+    
+                <div id="overlay"></div>
+                <div id="popup">
+                    
+                    <div class="button_23">
+                                    <button id="close" onclick="">Повторить заказ</button>
+                    </div>
+    
+                </div>
+    
+                <a class="p2">Доставка получена</a>
+                <br>
+    
+                <a class="p3">1 товар</a>
+    
+                <div class="photo_name">
+                    <img src="/photo_product/00001.png" alt="">
+                    <a class="name_pr">Лист гипсоволокнистый KNAUF <br> Суперпол, 600*1200*20мм</a>
+                </div>
+                <div class="price">
+                    <a>610 ₽</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <!--Если нет то-->
+        <div class="not_purchases" style="display: none;">
+            <img src="img/Default_goods_delivery_stylish_illustration_3 1.png" alt="#">
+            <div class="text">
+                <a class="a1">Нет актуальных доставок</a>
+                <br>
+                <a class="a2">Закажите товары из каталога!</a>
+                <br>
+                <br>
+                <button class="gui" onclick="window.location.href='person.html'">Перейти в каталог</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    
+
+    
+   
+    
+
+<script src="photo_edit_create.js"></script>
+
+</body>
+
+</html>

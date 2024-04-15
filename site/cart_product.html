@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_setting_pc.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>personal_area</title>
+</head>
+
+<body style="display: flex;
+flex-direction: column;
+align-items: center;">
+    <div class="header_pc">
+
+
+        <img src="img/logo_pc_header.svg" alt=""  style="width: 176px;" style="cursor: pointer;" onclick="window.location.href='home.html'">
+        <img src="img/cvtalog_button.svg" alt="" style="width: 146px;" style="cursor: pointer;" onclick="window.location.href='catalog.html'">
+
+        <div class="header_pc_vision">
+            <input class="sgerch_pc" type="text" name="" id="" placeholder="Поиск товара">
+            <img src="img/serch_header.svg" alt="" style="cursor: pointer;">
+        </div>
+
+        <div class="blocs_header_pc" onclick="window.location.href='personal_area.html'">
+            <div class="bloc_header_pc">
+                <img src="svg/User.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='personal_area.html'">Кабинет</a>
+            </div>
+            <div class="bloc_header_pc" onclick="window.location.href='favorites.html'">
+                <img src="svg/Heart.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='favorites.html'">Избранное</a>
+            </div>
+            <div class="bloc_header_pc" onclick="window.location.href='cart.html'">
+                <img src="svg/Cart.svg" alt="">
+                <a style="font-size: 10px; color: #757575;" onclick="window.location.href='cart.html'">Корзина</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="" style="
+    display: flex;">
+      <div class="slider-container">
+        <div class="thumbnails">
+          <button class="prev"><img src="svg/Round Alt Arrow Up.svg" alt=""></button>
+          <div class="thumbnail"><img src="/photo_product/00001.png" alt="Thumbnail 1"></div>
+          <div class="thumbnail"><img src="svg/Arrow.svg" alt="Thumbnail 2"></div>
+          <div class="thumbnail"><img src="/photo_product/00001.png" alt="Thumbnail 3"></div>
+          <button class="next"><img src="svg/Round Alt Arrow Down.svg" alt=""></button>
+          <!-- Добавьте миниатюры для каждого слайда -->
+        </div>
+        <div class="slider"> 
+          <div class="slide"><img src="/photo_product/00001.png" alt="Slide 1"></div>
+          <div class="slide"><img src="svg/Arrow.svg" alt="Slide 2"></div>
+          <div class="slide"><img src="/photo_product/00001.png" alt="Slide 3"></div>
+          <!-- Добавьте нужное количество слайдов -->
+        </div>
+    
+      </div>
+
+      <div class="">
+        <div class="">
+          <div class="name_product">Лист гипсоволокнистый KNAUF <br>
+            Суперпол, 600*1200*20мм
+        </div>
+  
+  
+        <div class="top_cart_howcase">
+            <div class="top_star">
+                <div class="top_cart_product">5.0</div>
+                <div class="star_cart_product">
+                    <img src="svg/Star.svg" alt="star">
+                    <img src="svg/Star.svg" alt="star">
+                    <img src="svg/Star.svg" alt="star">
+                    <img src="svg/Star.svg" alt="star">
+                    <img src="svg/Star.svg" alt="star">
+                </div>
+            </div>
+            <div class="brend_cart_product">
+                Бренд: Кнауф
+  
+            </div>
+        </div>
+  
+        <div class="price_person">
+            <div class="price_pr">
+                <div class="prise">610 ₽</div>
+                <div class="pr"><u>шт</u></div>
+                <div class="counter">
+                        <img src="svg/min.svg" alt="" class="min" onclick="decrement()">
+    
+                    <span id="counterValue">1</span>
+                        <img src="svg/max.svg" alt="" class="max" onclick="increment()">
+  
+                </div>
+            </div>
+  
+        </div>
+  
+  
+    
+  
+  
+        <div class="like_cart_product">
+            <div class="like_cart_product">
+                <button id="like_19" class="selector" aria-label="Отправить реакцию «нравится»" aria-pressed="false" data-id="1" style="width: 50px; height: 50px;">
+                    <svg class="like_no_1" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="svg/like_no_1.svg">
+                <path class="like_no_1" d="M15.8398 2.39496C13.013 -0.169205 10.2871 2.03882 9.27755 
+                    3.46336C8.26797 2.03882 5.54163 -0.169205 2.71481 2.39496C-0.112011 
+                    4.95912 1.87349 8.80536 3.2196 10.408C4.22918 11.6544 6.85456 14.361  
+                    9.27755 15.2158C11.7005 14.361 14.3254 11.6544 15.335 10.408C16.6811 
+                    8.80536 18.6666 4.95912 15.8398 2.39496Z" stroke="black" 
+                    stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                </button>
+               </div>
+  
+            <div class="button_cart_product">
+                <button class="color-button red-button" onclick="changeColorAndText(this)">В корзину</button>
+            </div>
+        </div>
+  
+        
+
+    </div>
+
+  
+    <div class="delivery_var">
+      <hr>
+        <div class="delivery_base">
+            <div class="n1">
+                <img src="svg/Box.svg" alt="">
+                <div>Доставка</div>
+            </div>
+            
+            <div class="info_delivery_base">18.03 - 20.03, бесплатно</div>
+  
+        </div>
+        <div class="delivery_fast">
+            <div class="n2">Экспресс-доставка</div>
+            
+            <div class="info_delivery_fast">завтра, бесплатно от 5000₽, предоплата 100%</div>
+  
+        </div>
+  
+    </div>
+        </div>
+
+    </div>
+
+    <hr style="margin-top: 100px;">
+
+    <div class="" style="display: flex; padding-top: 50px; border-top: 1px solid #757575;">
+        <div class="pool_pc_cart_product_1" style="width: 500px;">
+            <a>Описание</a>
+        <div class="info">КНАУФ-суперпол — элемент пола (ЭП), представляет
+            собой изделие заводской готовности к поэлементной
+            сборке в конструкциях стяжек сборных оснований пола
+            КНАУФ. Элементы пола изготавливаются путем
+            склеивания двух влагостойких гипсоволокнистых
+            листов (ГВЛВ по ГОСТ Р 51829-2001) с размерами
+            1200х600х20 мм с взаимным смещением в двух
+            перпендикулярных направлениях и образованием
+            фальцев шириной 50 мм по периметру изделий.
+            Общая толщина ЭП — 20 мм. Применяется для
+            устройства сборного основания пола, в зданиях
+            различного назначения.</div>    
+        </div>
+
+        <div class="pool_pc_cart_product_2">
+            <a>Характеристики</a>
+        <div class="characteristics">
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Артикул</div>
+                    <div class="h_info">000-019-228</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Страна</div>
+                    <div class="h_info">Россия</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Бренд</div>
+                    <div class="h_info">Кнауф</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Категория</div>
+                    <div class="h_info">Суперпол</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Толщина, мм</div>
+                    <div class="h_info">20</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Влагостойкость</div>
+                    <div class="h_info">Да</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Применимость с теплыми полами</div>
+                    <div class="h_info">Да</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Звукоизоляция</div>
+                    <div class="h_info">Да</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Группа горючести</div>
+                    <div class="h_info">Г1</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Вес, кг</div>
+                    <div class="h_info">18.28</div>
+                </div>
+                <hr>
+
+
+            </div>
+
+        </div>
+        <a>Размер упаковки</a>
+        <div class="characteristics">
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Ширина, мм</div>
+                    <div class="h_info">600</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Высота, мм</div>
+                    <div class="h_info">20</div>
+                </div>
+                <hr>
+
+
+            </div>
+            <div class="h_block">
+                <div class="h_data">
+                    <div class="h_name">Длина, мм</div>
+                    <div class="h_info">1200</div>
+                </div>
+                <hr>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+    <div class="" style="display: flex; align-items: center; border-top: 1px solid #757575;">
+
+
+        <div class="" style="margin-right: 70px;">
+
+
+            <div class="reviews">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <a style="font-size: 30px; font-weight: bold;">Отзывы</a>
+                        <a class="num_reviews" style="font-size: 15px; font-weight: 600; color: #757575;">6</a>
+                    </div>
+
+
+                </div>
+
+
+                
+
+
+
+            </div>
+
+            <div class="reviews_h">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <a style="font-size: 20px; font-weight: 600;">Общий рейтинг</a>
+                    </div>
+                </div>
+        
+                <div class="reviews_block" style="margin-bottom: 20px;">
+                    <div class="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+        
+                    <div class="hr"><hr></div>
+                    <div>5.0 / 5</div>
+                </div>
+                    <div class="reviews_percentage">
+                        <div class="num_rev">5 звeзд</div>
+                        <div class="parrent">
+                            <div class="child five">
+                            </div>
+                        </div>
+                        <div class="per_rev">6</div>
+                    </div>
+                    <div class="reviews_percentage">
+                        <div class="num_rev">4 звeзды</div>
+                        <div class="parrent">
+                            <div class="child four">
+                            </div>
+                        </div>
+                        <div class="per_rev">0</div>
+                    </div>
+                    <div class="reviews_percentage">
+                        <div class="num_rev">3 звeзды</div>
+                        <div class="parrent">
+                            <div class="child three">
+                            </div>
+                        </div>
+                        <div class="per_rev">0</div>
+                    </div>
+                    <div class="reviews_percentage">
+                        <div class="num_rev">2 звeзды</div>
+                        <div class="parrent">
+                            <div class="child two">
+                            </div>
+                        </div>
+                        <div class="per_rev">0</div>
+                    </div>
+                    <div class="reviews_percentage">
+                        <div class="num_rev">1 звeзда</div>
+                        <div class="parrent">
+                            <div class="child one">
+                            </div>
+                        </div>
+                        <div class="per_rev">0</div>
+                    </div>
+        
+        
+        
+        
+        
+            </div>
+
+        </div>
+
+        <div class="" style="margin-left: 70px;">
+            <div class="button_create_reviews">
+                <button class="create_reviews">Оставить отзыв</button>
+            </div>
+
+            <div class="reviews_users">
+                <div class="reviews_users_block">
+                    <div class="reviews_users_block_star" style="display: flex;">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <div class="data_reviews">1 января 2024</div>
+                    </div>
+                    <div class="name_user">Александр</div>
+                    <div class="text_reviews">Хорошая смесь!</div>
+
+                    <hr style="margin-bottom: 20px;">
+        
+                </div>
+                <div class="reviews_users_block">
+                    <div class="reviews_users_block_star" style="display: flex;">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <img src="svg/Star.svg" alt="">
+                        <div class="data_reviews">10 января 2024</div>
+                    </div>
+                    <div class="name_user">Сергей</div>
+                    <div class="text_reviews">Хорошая смесь!</div>
+                    <hr>
+        
+                </div>
+        
+                
+        
+            </div>
+
+        </div>
+    </div>
+
+    <div class="" style="height: 200px;"></div>
+
+    
+
+
+    
+
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close"><img src="svg/Close Circle.svg" alt="back"></span>
+          <div class="header_new_reviews">
+
+            
+        </div>
+    
+        <div class="name_new_reviews" style="margin-top: 20px;">Новый отзыв</div>
+        <div class="rev_data_1">
+
+            <div class="photo_reviews">
+                <img src="/photo_product/00001.png" alt="">
+            </div>
+        
+            <div class="name_product_new_reviews">
+                Лист гипсоволокнистый KNAUF <br>
+                Суперпол, 600*1200*20мм
+            </div>
+        
+            <div class="stars_new" >
+                <div class="star_new_reviews" onclick="toggleStar(1)">★</div>
+                <div class="star_new_reviews" onclick="toggleStar(2)">★</div>
+                <div class="star_new_reviews" onclick="toggleStar(3)">★</div>
+                <div class="star_new_reviews" onclick="toggleStar(4)">★</div>
+                <div class="star_new_reviews" onclick="toggleStar(5)">★</div>
+            </div>
+        
+        
+                
+            <div style="font-size: 20px; width: 100%; text-align: center; font-weight: 600;">Оцените товар!</div>
+        
+            <div class="" style="width: 100%; display: flex; justify-content: space-evenly;">
+                <input class="input_reviews" type="text" placeholder="напишите комментарий">
+            </div>
+        
+        
+        
+            <div class="button_create_reviews">
+                <button class="create_reviews_finish" onclick="changeReviews()">Оставить отзыв</button>
+            </div>
+          </div>
+          <div class="rev_data_2">
+
+            <div style="font-size: 20px; width: 100%; text-align: center; font-weight: 600; margin-top: 150px;">Cпасибо!</div>
+
+
+            <div class="name_product_new_reviews" style="margin-top: 10px; margin-bottom: 300px;">
+                Ваш отзыв скоро опубликуем!
+
+            </div>
+
+        </div>
+
+        </div>
+
+    
+        
+    
+    
+
+   
+    
+
+    <script src="photo_edit_create.js"></script>
+    <script src="like_scripr.js"></script>
+    <script src="slider.js"></script>
+    <script src="cart.js"></script>
+    <script src="counter.js"></script>
+
+</body>
+
+</html>

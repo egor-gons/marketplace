@@ -1,0 +1,235 @@
+
+body{
+    display: flex;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/fon.png);
+    background-size: 146vh auto;
+    flex-direction: row-reverse;
+
+
+}
+
+
+.fon_filter{
+    margin-right: 600px;
+}
+
+.namen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background_logo{
+    width: 100vw;
+}
+
+.background{
+    background-color: #768C96;
+    z-index: -99999;
+}
+
+.background img{
+    opacity: 45%;
+    display: block;
+    width: 100vw;
+
+}
+
+.pool{
+    z-index: 1;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    height: 45px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.pool_1{
+    z-index: 1;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    height: 18px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.field{
+    margin-left: 55%;
+    display: block;
+    width: 600px;
+    bottom: 0vh;
+    height: 99vh;
+    position: absolute;
+    background: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 0px 10px;
+    
+}
+
+.field_avt{
+    margin-left: 55%;
+    display: block;
+    width: 600px;
+    bottom: 0vh;
+    height: 99vh;
+    position: absolute;
+    background: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 0px 10px;
+    
+}
+
+.field_vs{
+    margin-left: 55%;
+    display: block;
+    width: 600px;
+    bottom: 0vh;
+    height: 99vh;
+    position: absolute;
+    background: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 0px 10px;
+    
+}
+
+.logo{
+    position: absolute;
+    top: 1px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img{
+    width: 77px;
+}
+
+.back{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.name{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tlk-input{
+    font-size: 14px;
+    z-index: 0;
+    width: 80%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: black;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.button button{
+    padding: 10px 30px;
+    background: #000000;
+    color: #fff;
+    width: 290px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.tlk-form__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    padding: 0 8px;
+    font-size: 14px;
+    color: #000
+}
+
+.password input{
+    width: 90%;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: black;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.password{
+    height: 60px;
+    width: 290px;
+}
+
+.name_input{
+    font-size: 13px;
+}
+
+.name_input_vs{
+    text-align: center;
+    font-size: 13px;
+}
+
+.name_input a{
+
+    font-size: 14px;
+}
+
+.password a {
+	position: relative;
+	top: -6px;
+	left: -6%;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+    
+}
+.password-control.view {
+	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+.graf_data img{
+    cursor: pointer;
+}
