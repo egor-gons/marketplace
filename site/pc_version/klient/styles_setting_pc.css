@@ -867,6 +867,10 @@ body{
     border-radius: 10px;
 }
 
+.hidden{
+    display: none;
+}
+
 .search_input{
     width: 100%;
     height: 95%;
@@ -1024,9 +1028,6 @@ body{
     margin-top: 4px;
 }
 
-.hidden{
-    display: none;
-}
 
 .button_by_showcase{
     background: #000000;
@@ -1737,3 +1738,5 @@ body{
 .supplier{
     margin-left: 10px;
 }
+
+
